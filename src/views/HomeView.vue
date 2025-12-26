@@ -1,13 +1,13 @@
 <script setup></script>
 
 <template>
-  <div class="w-full mx-auto">
+  <div class="w-full mx-auto mt-20">
     <img
       class="w-full h-[600px] object-cover"
       src="@/assets/image1.jpg"
       alt="FarmBora banner"
     />
-    <div class="absolute inset-0 bg-black bg-opacity-50 h-[600px] mt-20">
+    <div class="absolute inset-0 bg-black bg-opacity-50 h-[500px] md:h-[600px] mt-20">
       <div
         class="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4"
       >
