@@ -5,7 +5,7 @@
 </script>
 <template>
 <nav
-    class="bg-gray-50 fixed w-full z-50 top-0 start-0"
+    class="bg-gray-50 fixed w-full z-50 top-0 start-0 "
 >
     <div
     class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
@@ -24,12 +24,7 @@
         </h1>
     </a>
     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <button
-        type="button"
-        class="text-white bg-green-700 hover:bg-green-800 box-border border border-transparent focus:ring-4 focus:ring-green-300 shadow-xs font-medium leading-5 rounded-md text-sm px-3 py-2 focus:outline-none w-auto text-center "
-        >
-        Get started
-        </button>
+ 
         <button
         @click="isOpen = !isOpen"
         type="button"
@@ -62,23 +57,27 @@
     isOpen ? 'block' : 'hidden'
 ]">
         <ul
-        class="flex flex-col p-4 md:p-0 mt-4 font-medium  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 "
+        class="flex flex-col p-4 md:p-0 mt-4 font-medium  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0  "
         >
-        <li>
-        <RouterLink class="block py-2 px-3 text-heading bg-brand rounded-sm md:bg-transparent md:text-fg-brand md:p-0"
-:to="{ name: 'home' }">Home</RouterLink>
+        <li class="pt-2 hover:text-green-800 transition duration-300">
+        <RouterLink :to="{ name: 'home' }">Home</RouterLink>
+        </li>
+        <li class="pt-2 hover:text-green-800 transition duration-300">
+            <RouterLink :to="{ name: 'about' }">About</RouterLink>
+        </li>
+        <li class="pt-2 hover:text-green-800 transition duration-300">
+            <RouterLink :to="{ name: 'services' }">Services</RouterLink>
+        </li>
+        <li class="pt-2 hover:text-green-800 transition duration-300">
+        <RouterLink :to="{ name: 'contact' }">Contact</RouterLink>
         </li>
         <li>
-            <RouterLink class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
-:to="{ name: 'about' }">About</RouterLink>
-        </li>
-        <li>
-            <RouterLink class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
-:to="{ name: 'services' }">Services</RouterLink>
-        </li>
-        <li>
-            <RouterLink class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
-:to="{ name: 'contact' }">Contact</RouterLink>
+        <button
+        type="button"
+        class="text-white bg-green-700 hover:bg-green-800 box-border border border-transparent focus:ring-4 focus:ring-green-300 shadow-xs font-medium leading-5 rounded-md text-sm px-3 py-2 focus:outline-none w-full text-center mt-5 md:mt-0 md:w-auto transition duration-300"
+        >
+        Get started
+        </button>
         </li>
         </ul>
     </div>
