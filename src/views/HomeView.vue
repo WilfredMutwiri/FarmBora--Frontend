@@ -21,14 +21,14 @@
           FarmBora connects farmers directly to buyers and uses AI to predict
           prices, recommend the best selling time, and increase profits.
         </p>
-        <div>
+        <div class="flex flex-col md:flex-row gap-4 md:gap-10 mt-4 items-center justify-center">
           <button
-            class="bg-green-600 hover:bg-green-700 w-60 text-white font-bold py-3 px-6 rounded-full transition duration-300 border border-green-300 shadow-lg shadow-green-500/50"
+            class="bg-green-600 hover:bg-green-700 w-64 text-white font-bold py-3 rounded-full transition duration-300 border border-green-300 shadow-lg shadow-green-500/50"
           >
             Get Started as a Farmer
           </button>
           <button
-            class="ml-4 bg-green-600 hover:bg-green-700 w-60 text-white font-bold py-3 px-6 rounded-full transition duration-300 border border-green-300 shadow-lg shadow-green-500/50"
+            class="bg-green-600 hover:bg-green-700 w-64 text-white font-bold py-3 rounded-full transition duration-300 border border-green-300 shadow-lg shadow-green-500/50"
           >
             Get Started as a Buyer
           </button>
@@ -54,7 +54,7 @@
               reliable buyers. Buyers, on the other hand, struggle to find
               consistent, high-quality supply from nearby farmers.
             </p>
-            <div class="flex flex-row gap-8">
+            <div class="flex flex-col md:flex-row gap-8">
             <div>
               <h3 class="text-xl font-semibold text-gray-900 mb-3">
                 Challenges Faced by Farmers
