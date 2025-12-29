@@ -14,7 +14,7 @@
         </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         
         <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition text-center">
         <div class="w-14 h-14 mx-auto mb-6 flex items-center justify-center rounded-full bg-green-100 text-green-700 font-bold text-xl">
