@@ -78,7 +78,7 @@
             Send Us a Message
           </h2>
 
-          <form class="space-y-4">
+          <form class="space-y-4"   action="https://formspree.io/f/mlgeknkk" method="POST">
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-1">
                 Full Name
@@ -96,6 +96,7 @@
               </label>
               <input
                 type="email"
+                name="email"
                 placeholder="you@example.com"
                 class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-600"
               />
@@ -107,6 +108,7 @@
               </label>
               <textarea
                 rows="5"
+                name="message"
                 placeholder="How can we help you?"
                 class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-600"
               ></textarea>
