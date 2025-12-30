@@ -85,6 +85,7 @@
               </label>
               <input
                 type="text"
+                name="full name"
                 placeholder="Your name"
                 class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-600"
               />
