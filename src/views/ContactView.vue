@@ -79,16 +79,43 @@
           </h2>
 
           <form class="space-y-4"   action="https://formspree.io/f/mlgeknkk" method="POST">
-            <div>
+            <div class="flex flex-col md:flex-row justify-between gap-5">
+              <div class="flex-1">
               <label class="block text-sm font-medium text-gray-700 mb-1">
-                Full Name
+                First Name *
               </label>
               <input
                 type="text"
-                name="full name"
-                placeholder="Your name"
+                required
+                name="first name"
+                placeholder="e.g. John"
                 class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-600"
               />
+              </div>
+              <div class="flex-1">
+              <label class="block text-sm font-medium text-gray-700 mb-1">
+                Last Name
+              </label>
+              <input
+                type="text"
+                name="last name"
+                placeholder="e.g. Doe"
+                class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-600"
+              />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">
+                Phone Number *
+              </label>
+              <input
+                type="tel"
+                required
+                name="phone"
+                placeholder="+254 7xx xxx xxx"
+                class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-600"
+              />  
             </div>
 
             <div>
@@ -105,10 +132,11 @@
 
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-1">
-                Message
+                Message *
               </label>
               <textarea
                 rows="5"
+                required
                 name="message"
                 placeholder="How can we help you?"
                 class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-600"
