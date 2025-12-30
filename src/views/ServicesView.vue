@@ -9,7 +9,7 @@
     src="@/assets/banner3.jpg"
     alt="FarmBora banner"
     />
-    <div class="absolute inset-0 bg-black bg-opacity-50 h-[500px] md:h-[600px]">
+    <div class="absolute inset-0 bg-black bg-opacity-50 h-[600px]">
     <div
         class="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4"
     >

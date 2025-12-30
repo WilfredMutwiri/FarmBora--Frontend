@@ -24,7 +24,6 @@
         </h1>
     </a>
     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
- 
         <button
         @click="isOpen = !isOpen"
         type="button"
@@ -64,6 +63,9 @@
         </li>
         <li class="pt-2 hover:text-green-800 transition duration-300">
             <RouterLink :to="{ name: 'about' }">About</RouterLink>
+        </li>
+        <li class="pt-2 hover:text-green-800 transition duration-300">
+            <RouterLink :to="{ name: 'market' }">Market</RouterLink>
         </li>
         <li class="pt-2 hover:text-green-800 transition duration-300">
             <RouterLink :to="{ name: 'services' }">Services</RouterLink>
